@@ -4,5 +4,5 @@
     use Facebook accounts with the demo application, register an application
     and provide your value here.
     -->
-    <string name="facebook_application_id" translatable="false">CHANGE-ME</string>
+    <string name="facebook_application_id" translatable="false">136149063461312</string>
 </resources>

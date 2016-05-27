@@ -2,17 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center|bottom">
+    android:orientation="vertical"
+    android:gravity="center|top">
 
     <LinearLayout
-        android:id="@+id/btn_holder"
-        style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder">
+        style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder"
+        android:layout_marginTop="56dp">
 
-        <Button
-            android:id="@+id/email_provider"
-            style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
-            android:text="@string/email_button_text"/>
-
+        <ImageView
+            style="@style/FirebaseUI.ImageView"
+            android:src="@drawable/logo_account_chooser" />
     </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/btn_holder"
+            style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder">
+
+            <Button
+                android:id="@+id/email_provider"
+                style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
+                android:text="@string/email_button_text"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 </LinearLayout>
